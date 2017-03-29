@@ -984,7 +984,7 @@ babel-preset-stage-3@^6.22.0:
     babel-plugin-transform-exponentiation-operator "^6.22.0"
     babel-plugin-transform-object-rest-spread "^6.22.0"
 
-babel-register@^6.22.0:
+babel-register@6.x.x, babel-register@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.22.0.tgz#a61dd83975f9ca4a9e7d6eff3059494cd5ea4c63"
   dependencies:
@@ -2021,7 +2021,7 @@ debug@2.2.0, debug@~2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@2.6.0, debug@^2.1.1, debug@^2.2.0:
+debug@2.6.0, debug@^2.1.1, debug@^2.2.0, debug@^2.4.4:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
   dependencies:
@@ -2704,7 +2704,7 @@ express-unless@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/express-unless/-/express-unless-0.3.0.tgz#5c795e7392571512dd28f520b3857a52b21261a2"
 
-express@^4.14.1:
+express@^4.14.0, express@^4.14.1:
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.14.1.tgz#646c237f766f148c2120aff073817b9e4d7e0d33"
   dependencies:
@@ -3011,6 +3011,12 @@ gauge@~2.7.1:
     supports-color "^0.2.0"
     wide-align "^1.1.0"
 
+gemini-babel@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gemini-babel/-/gemini-babel-1.0.0.tgz#cec4947fcd0d1e6aa58afe5d2d9c4f2ed04b8493"
+  dependencies:
+    babel-register "6.x.x"
+
 gemini-configparser@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/gemini-configparser/-/gemini-configparser-0.1.2.tgz#85cbbe489e87f3680a1ad445b9dfdee8a31064e1"
@@ -3044,6 +3050,21 @@ gemini-coverage@^1.0.0:
     inherit "~2.2.1"
     q "^1.4.1"
     q-io "^2.0.6"
+
+gemini-react@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/gemini-react/-/gemini-react-0.11.0.tgz#01bcf52d91cf90271ee921c88922d033bcd39e58"
+  dependencies:
+    commander "^2.9.0"
+    debug "^2.4.4"
+    express "^4.14.0"
+    ignore-styles "^5.0.1"
+    lodash "^4.16.4"
+    mkdirp "^0.5.1"
+    promisify-node "^0.4.0"
+    rimraf "^2.5.4"
+    server-destroy "^1.0.1"
+    webpack-dev-middleware "^1.8.4"
 
 gemini@^4.18.1:
   version "4.18.1"
@@ -3450,6 +3471,10 @@ icss-replace-symbols@^1.0.2:
 ieee754@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
+
+ignore-styles@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ignore-styles/-/ignore-styles-5.0.1.tgz#b49ef2274bdafcd8a4880a966bfe38d1a0bf4671"
 
 ignore@^3.2.0:
   version "3.2.2"
@@ -4699,6 +4724,12 @@ node-uuid@~1.4.0:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
 
+nodegit-promise@~4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/nodegit-promise/-/nodegit-promise-4.0.0.tgz#5722b184f2df7327161064a791d2e842c9167b34"
+  dependencies:
+    asap "~2.0.3"
+
 nopt@~3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
@@ -5686,6 +5717,13 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+promisify-node@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/promisify-node/-/promisify-node-0.4.0.tgz#32803874ec411784e4786c339902a87a179a469c"
+  dependencies:
+    nodegit-promise "~4.0.0"
+    object-assign "^4.0.1"
+
 proxy-addr@~1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-1.1.3.tgz#dc97502f5722e888467b3fa2297a7b1ff47df074"
@@ -6337,6 +6375,10 @@ serve-static@~1.11.2:
     escape-html "~1.0.3"
     parseurl "~1.3.1"
     send "0.14.2"
+
+server-destroy@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/server-destroy/-/server-destroy-1.0.1.tgz#f13bf928e42b9c3e79383e61cc3998b5d14e6cdd"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
@@ -7252,7 +7294,7 @@ webpack-bundle-analyzer@^2.3.0:
     mkdirp "^0.5.1"
     opener "^1.4.2"
 
-webpack-dev-middleware@^1.10.0:
+webpack-dev-middleware@^1.10.0, webpack-dev-middleware@^1.8.4:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.10.0.tgz#7d5be2651e692fddfafd8aaed177c16ff51f0eb8"
   dependencies:

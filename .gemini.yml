@@ -16,3 +16,8 @@ system:
   coverage:
     enabled: true
     html: false
+  plugins:
+    react:
+      webpackConfig: ./tools/webpack.config.js
+    babel:
+      presets: ['es2015', 'stage-0', 'react']

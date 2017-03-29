@@ -1,5 +1,6 @@
 {
   "globals": {
-    "gemini": true
+    "gemini": true,
+    "geminiReact": true
   }
 }
