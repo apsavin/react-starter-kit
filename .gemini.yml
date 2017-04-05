@@ -17,7 +17,7 @@ system:
     enabled: true
     html: false
   plugins:
+    babel:
+        presets: [["env", {"targets": {"node": "current"}}], "stage-2", "react"]
     react:
       webpackConfig: ./tools/webpack.config.js
-    babel:
-      presets: ['es2015', 'stage-0', 'react']
