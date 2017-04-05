@@ -20,4 +20,4 @@ system:
     babel:
         presets: [["env", {"targets": {"node": "current"}}], "stage-2", "react"]
     react:
-      webpackConfig: ./tools/webpack.config.js
+      webpackConfig: ./tools/gemini.webpack.config.js
