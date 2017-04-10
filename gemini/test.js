@@ -1,5 +1,5 @@
-const React = require('react');
-const Header = require('../src/components/Header');
+import React from 'react';
+import Header from '../src/components/Header';
 
 geminiReact.suite('Header', (suite) => {
   suite.render(<Header />)

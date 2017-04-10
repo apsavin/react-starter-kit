@@ -1,3 +1,8 @@
-const configs = require('./webpack.config');
+const configs = require('./webpack.config').default;
+const path = require('path');
 
-module.exports = configs[0];
+const config = configs[0];
+
+config.module.rules[0].include.push(path.resolve(__dirname, '../gemini'));
+
+module.exports = config;
