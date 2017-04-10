@@ -13,9 +13,6 @@ system:
   debug: true
   parallelLimit: 3
   diffColor: '#ff0000'
-  coverage:
-    enabled: true
-    html: false
   plugins:
     babel:
         presets: [["env", {"targets": {"node": "current"}}], "stage-2", "react"]
